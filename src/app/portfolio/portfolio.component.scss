@@ -1,0 +1,28 @@
+section {
+    color: white;
+}
+
+div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10rem 0 0 0;
+    h1 {
+        font-size: 6.5rem;
+        text-align: center;
+        position: relative;
+        width: fit-content;
+        img {
+            position: absolute;
+        }
+        .long {
+            right: -32rem;
+            top: 50%;
+        }
+        .short {
+            left: -9rem;
+            top: 50%;
+        }
+    }
+}

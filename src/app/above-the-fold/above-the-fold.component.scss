@@ -38,7 +38,7 @@ section {
 .iAm {
     rotate: -90deg;
     font-size: 4.5rem;
-    margin: 1rem -3rem 0 0;
+    margin: 1rem -4rem 0 0;
 }
 
 .name {
@@ -47,9 +47,10 @@ section {
 }
 
 .job {
-    font-size: 2.6rem;
+    font-size: 3.1rem;
     color: $Purple;
     position: relative;
+    margin: -1rem 0 0 0;
 }
 
 .bg {
@@ -85,7 +86,8 @@ section {
     font-size: 1.25rem;
     position: absolute;
     bottom: 8rem;
-    right: 1rem;
+    right: 3rem;
+    text-decoration: none;
     img {
         rotate: -90deg;
         margin: 0 0 -2px 6px;

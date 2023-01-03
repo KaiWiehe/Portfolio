@@ -34,8 +34,11 @@ header {
 .menu {
     font-size: 1rem;
     margin: 0 7rem 0 0;
-    span {
+    a {
+        color: white;
+        text-decoration: none;
         margin: 0 0 0 1rem;
+        font-size: 1.25rem;
         &:hover {
             color: $Green;
             cursor: pointer;
