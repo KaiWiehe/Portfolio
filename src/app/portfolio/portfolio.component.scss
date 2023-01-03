@@ -1,8 +1,17 @@
+$Green: #70E61C;
+$LightBlue: #1CDAE6;
+$Purple: #9747FF;
+$DarkBlueTransparency: #141d2fcc;
+$DarkBlueBG: #141D2F;
+
+/* ------------------------------------------------------------- */
+
 section {
     color: white;
+    position: relative;
 }
 
-div {
+.headline {
     width: 100%;
     display: flex;
     align-items: center;
@@ -13,6 +22,7 @@ div {
         text-align: center;
         position: relative;
         width: fit-content;
+        margin-bottom: 0;
         img {
             position: absolute;
         }
@@ -25,4 +35,43 @@ div {
             top: 50%;
         }
     }
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin: 0 7rem 0 7rem;
+    .text {
+        margin: 0 0 0 6rem;
+        text-align: start;
+        h2 {
+            font-size: 2rem;
+            margin: 0.3rem 0;
+            color: $Purple;
+        }
+        span {
+            font-size: 1.5rem;
+            color: $Green;
+        }
+    }
+}
+
+.reverse {
+    flex-direction: row-reverse;
+    .text {
+        margin: 0 6rem 0 0;
+        text-align: end;
+    }
+}
+
+.purpleShadow {
+    position: absolute;
+    top: 50rem;
+    z-index: -1;
+}
+
+.greenShadow {
+    position: absolute;
+    right: 0;
+    bottom: -28rem;
 }

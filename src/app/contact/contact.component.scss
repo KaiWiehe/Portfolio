@@ -1,0 +1,105 @@
+$Green: #70E61C;
+$LightBlue: #1CDAE6;
+$Purple: #9747FF;
+$DarkBlueTransparency: #141d2fcc;
+$DarkBlueBG: #141D2F;
+
+/* ------------------------------------------------------------- */
+
+section {
+    color: white;
+    position: relative;
+    padding: 1rem 0 0 0;
+}
+
+h1 {
+    font-size: 6.5rem;
+    position: relative;
+    margin: 10rem 0 0 7rem;
+    .stroke {
+        position: absolute;
+        left: -7rem;
+        top: 50%;
+    }
+    .purpleShadow {
+        position: absolute;
+        bottom: -55rem;
+        left: -7rem;
+        z-index: -1;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative;
+    .left {
+        margin: 0 0 0 7rem;
+        width: 40%;
+        h2 {
+            font-size: 2rem;
+            margin-top: 0;
+        }
+    }
+    .right {
+        margin: 0.75rem 7rem 0 7rem;
+        width: 40%;
+        form {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            input,
+            textarea {
+                font-family: 'Poppins', Arial, Helvetica, sans-serif;
+                padding: 1rem 1.25rem;
+                border: 1px solid $Purple;
+                border-radius: 0.5rem;
+                background: transparent;
+                color: white;
+                &:hover {
+                    border: 1px solid $Green;
+                }
+                &::placeholder {
+                    /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: white;
+                    opacity: 1;
+                    /* Firefox */
+                }
+                &:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: white;
+                }
+                &::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: white;
+                }
+                &:focus-visible {
+                    outline: unset;
+                    border: 1px solid $Green;
+                }
+            }
+            textarea {
+                height: 10rem;
+                resize: none;
+            }
+            .greenButton {
+                color: white;
+                margin: 0 auto 0 auto;
+                border: 0;
+                padding: 0.75rem 1rem;
+                border-radius: 0.5rem;
+                background: $Green;
+                z-index: 1;
+                font-size: 1.5rem;
+                transition: all 125ms ease-in-out;
+                &:hover {
+                    padding: 1.25rem 1.5rem;
+                    background: $Purple;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+$Green: #70E61C;
+$LightBlue: #1CDAE6;
+$Purple: #9747FF;
+$DarkBlueTransparency: #141d2fcc;
+$DarkBlueBG: #141D2F;
+
+/* ------------------------------------------------------------- */
+
+footer {
+    height: 15rem;
+    width: 100%;
+    background: #141D2F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 11rem 0 0 0;
+    border-top: 4px solid $Green;
+    .left {
+        margin: 0 0 0 7rem;
+        .name {
+            font-size: 2rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            p {
+                color: $Green;
+                margin: 0;
+            }
+            .spaceLeft {
+                margin: 0 0 0 0.75rem;
+            }
+            .purple {
+                color: $Purple;
+            }
+        }
+    }
+    .middle {
+        font-size: 1.5rem;
+    }
+    .right {
+        margin: 0 7rem 0 0;
+        gap: 1rem;
+        display: flex;
+    }
+}
