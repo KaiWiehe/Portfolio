@@ -1,0 +1,119 @@
+$Green: #70E61C;
+$LightBlue: #1CDAE6;
+$Purple: #9747FF;
+$DarkBlueTransparency: #141d2fcc;
+$DarkBlueBG: #141D2F;
+
+/* ------------------------------------------------------------- */
+
+section {
+    display: flex;
+    position: relative;
+    height: calc( 100vh - 64px);
+}
+
+.picture {
+    width: 40rem;
+    margin: 0 0 0 4rem;
+}
+
+.shadow {
+    position: absolute;
+    z-index: -1;
+    left: -4rem;
+    top: 3rem;
+}
+
+.iAmContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    right: 7rem;
+    top: 10rem;
+    align-items: center;
+    z-index: 1;
+}
+
+.iAm {
+    rotate: -90deg;
+    font-size: 4.5rem;
+    margin: 1rem -3rem 0 0;
+}
+
+.name {
+    font-size: 6.5rem;
+    font-weight: 700;
+}
+
+.job {
+    font-size: 2.6rem;
+    color: $Purple;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    top: 11rem;
+    width: 100vw;
+}
+
+.iAmText {
+    display: flex;
+}
+
+.greenButton {
+    color: white;
+    margin: 2rem;
+    border: 0;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    background: $Green;
+    z-index: 1;
+    font-size: 1.5rem;
+    transition: all 125ms ease-in-out;
+    &:hover {
+        padding: 1.25rem 1.5rem;
+        background: $Purple;
+        cursor: pointer;
+    }
+}
+
+.scrollDown {
+    color: white;
+    rotate: 90deg;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 8rem;
+    right: 1rem;
+    img {
+        rotate: -90deg;
+        margin: 0 0 -2px 6px;
+    }
+    &:hover {
+        scale: 1.1;
+        cursor: pointer;
+    }
+}
+
+.linkList {
+    position: absolute;
+    bottom: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 0 0 -0.3rem;
+    cursor: pointer;
+    span {
+        color: white;
+        font-size: 1.5rem;
+        &:hover {
+            scale: 1.1;
+        }
+    }
+    img {
+        &:hover {
+            scale: 1.2;
+        }
+    }
+}

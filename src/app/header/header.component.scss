@@ -1,0 +1,44 @@
+$Green: #70E61C;
+$LightBlue: #1CDAE6;
+$Purple: #9747FF;
+$DarkBlueTransparency: #141d2fcc;
+$DarkBlueBG: #141D2F;
+
+/* ------------------------------------------------------------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    color: white;
+}
+
+.name {
+    margin: 0 0 0 7rem;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    p {
+        color: $Green;
+    }
+    .spaceLeft {
+        margin: 0 0 0 0.75rem;
+    }
+    .purple {
+        color: $Purple;
+    }
+}
+
+.menu {
+    font-size: 1rem;
+    margin: 0 7rem 0 0;
+    span {
+        margin: 0 0 0 1rem;
+        &:hover {
+            color: $Green;
+            cursor: pointer;
+        }
+    }
+}

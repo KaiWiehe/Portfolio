@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+$Green: #70E61C;
+$LightBlue: #1CDAE6;
+$Purple: #9747FF;
+$DarkBlueTransparency: #141d2fcc;
+$DarkBlueBG: #141D2F;
+
+/* ------------------------------------------------------------- */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background: $DarkBlueBG;
+    overflow-x: hidden;
+}

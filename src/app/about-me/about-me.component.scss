@@ -1,0 +1,28 @@
+section {
+    z-index: 1;
+    position: relative;
+    color: white;
+    margin: 0 0 0 7rem;
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+
+div {
+    display: flex;
+}
+
+.text1 {
+    width: 33%;
+}
+
+.text2,
+.text3 {
+    width: 27%;
+}
+
+img {
+    object-fit: contain;
+    margin: 0 1rem 0 0;
+}
