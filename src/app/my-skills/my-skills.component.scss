@@ -12,18 +12,17 @@ section {
     align-items: center;
     gap: 4rem;
     position: relative;
+    justify-content: center;
     /* padding: 15rem 0 0 0; */
     /* height: 33rem; */
     height: 100vh;
     @media (max-width: "1150px") {
         flex-direction: column-reverse;
-        margin: 0 7rem 0 7rem;
+        padding: 0 7rem 0 7rem;
     }
     @media (max-width: 650px) {
-        margin: 0 2rem 0 2rem;
+        padding: 2rem 2rem 0 2rem;
         gap: 0rem;
-        justify-content: center;
-        padding: 2rem 0 0 0;
     }
 }
 

@@ -6,6 +6,11 @@ $DarkBlueBG: #141D2F;
 
 /* ------------------------------------------------------------- */
 
+
+/* * {
+    outline: 1px solid red;
+} */
+
 body {
     margin: 0;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
@@ -15,8 +20,14 @@ body {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
     /* scroll-snap-type: y mandatory; */
 }
+
+
+/* section {
+    overflow: hidden;
+} */
 
 
 /* section {

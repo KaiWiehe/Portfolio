@@ -28,6 +28,34 @@ section {
         .long {
             right: -32rem;
             top: 50%;
+            /* right: -2rem;
+            top: 50%;
+            width: 35vw;
+            transform: translate(100%, 0); */
+            /* @media (max-width: 1750px) {
+                width: 33vw;
+            }
+            @media (max-width: 1550px) {
+                width: 30vw;
+            }
+            @media (max-width: 1300px) {
+                width: 27vw;
+            }
+            @media (max-width: 1150px) {
+                width: 25vw;
+            }
+            @media (max-width: 1050px) {
+                width: 22vw;
+            }
+            @media (max-width: 950px) {
+                width: 19vw;
+            }
+            @media (max-width: 850px) {
+                width: 15vw;
+            }
+            @media (max-width: 750px) {
+                width: 10vw;
+            } */
         }
         .short {
             left: -9rem;

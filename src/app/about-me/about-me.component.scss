@@ -17,6 +17,7 @@ section {
     height: 100vh;
     @media (max-width: 650px) {
         margin: 0 0 0 2rem;
+        padding: 4rem 0 0 0;
     }
 }
 
@@ -27,6 +28,9 @@ h1 {
     }
     @media (max-width: "690px") {
         font-size: 4.5rem;
+    }
+    @media (max-width: "430px") {
+        font-size: 3.5rem;
     }
 }
 
