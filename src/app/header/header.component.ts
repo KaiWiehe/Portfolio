@@ -6,12 +6,14 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  @ViewChild('menu') menu!: ElementRef;
+  @ViewChild('mobileMenuButton') mobileMenuButton!: ElementRef;
+  @ViewChild('mobileMenu') mobileMenu!: ElementRef;
 
   constructor(){}
 
-  openMenu(){
-    this.menu.nativeElement.classList.toggle('active')
+  openAndCloseMenu(){
+    this.mobileMenuButton.nativeElement.classList.toggle('active');
+    this.mobileMenu.nativeElement.classList.toggle('show');
   }
 
 }

@@ -10,6 +10,7 @@ section {
     display: flex;
     position: relative;
     height: calc( 100vh - 64px);
+    margin: 64px 0 0 0;
 }
 
 .img {
@@ -75,6 +76,9 @@ section {
     @media (max-height: "1000px") and (max-width: "1350px") {
         bottom: -9rem;
     }
+    @media (max-width: 530px) {
+        bottom: -11rem;
+    }
 }
 
 .iAm {
@@ -85,6 +89,10 @@ section {
         font-size: 3rem;
         margin: 1rem -3rem 0 0;
     }
+    @media (max-width: 530px) {
+        font-size: 2.4rem;
+        margin: 1rem -2.5rem 0 0;
+    }
 }
 
 .name {
@@ -92,6 +100,9 @@ section {
     font-weight: 700;
     @media (max-height: "1000px") and (max-width: "1350px") {
         font-size: 4.5rem;
+    }
+    @media (max-width: 530px) {
+        font-size: 3.5rem;
     }
 }
 
@@ -102,6 +113,9 @@ section {
     margin: -1rem 0 0 0;
     @media (max-height: "1000px") and (max-width: "1350px") {
         font-size: 2.2rem;
+    }
+    @media (max-width: 530px) {
+        font-size: 1.7rem;
     }
 }
 

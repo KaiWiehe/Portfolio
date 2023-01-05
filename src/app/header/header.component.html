@@ -6,7 +6,7 @@
         <a href="#portfolio">Portfolio</a>
     </div>
 
-    <div class="mobileMenu" (click)="openMenu()" #menu>
+    <div class="mobileMenuButton" (click)="openAndCloseMenu()" #mobileMenuButton>
         <svg viewBox="0 0 200 200">
             <g>
               <path d="M72 82.286h28.75"/>
@@ -17,5 +17,10 @@
               <path d="M100.75 125.143h28.75"/>
             </g>
         </svg>
+    </div>
+    <div class="mobileMenu" #mobileMenu>
+        <a href="#aboutMe" (click)="openAndCloseMenu()">About me</a>
+        <a href="#mySkills" (click)="openAndCloseMenu()">Skills</a>
+        <a href="#portfolio" (click)="openAndCloseMenu()">Portfolio</a>
     </div>
 </header>

@@ -15,6 +15,9 @@ section {
     align-items: center;
     /* padding: 3rem 0 0 0; */
     height: 100vh;
+    @media (max-width: 650px) {
+        margin: 0 0 0 2rem;
+    }
 }
 
 h1 {
@@ -48,8 +51,11 @@ h1 {
         object-fit: contain;
         margin: 0 1rem 0 0;
     }
-    @media (max-width: "1000px") {
+    @media (max-width: 1000px) {
         margin: 0 7rem 0 0;
+    }
+    @media (max-width: 650px) {
+        margin: 0 2rem 0 0;
     }
 }
 
