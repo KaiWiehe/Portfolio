@@ -7,12 +7,18 @@ $DarkBlueBG: #141D2F;
 /* ------------------------------------------------------------- */
 
 section {
-    margin: 12rem 0 0 0;
     color: white;
     display: flex;
+    align-items: center;
     gap: 4rem;
     position: relative;
-    padding: 10rem 0 0 0;
+    /* padding: 15rem 0 0 0; */
+    /* height: 33rem; */
+    height: 100vh;
+    @media (max-width: "1150px") {
+        flex-direction: column-reverse;
+        margin: 0 7rem 0 7rem;
+    }
 }
 
 .left {
@@ -24,6 +30,12 @@ section {
         display: flex;
         flex-direction: row;
         gap: 2rem;
+        @media (max-width: "1500px") {
+            gap: 0;
+        }
+        @media (max-width: "1150px") {
+            gap: 2rem;
+        }
     }
     .icon {
         width: 11rem;
@@ -31,6 +43,44 @@ section {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        &:hover {
+            img {
+                animation: jump 400ms cubic-bezier(0.42, 0, 0.7, 0.91) infinite;
+            }
+        }
+        @media (max-width: "1400px") {
+            width: 8rem;
+        }
+        @media (max-width: "1150px") {
+            width: 4rem;
+            margin: 0 0 0 auto;
+        }
+    }
+    .marginRight {
+        @media (max-width: "1150px") {
+            margin: 0 auto 0 0;
+        }
+    }
+    .noMargin {
+        @media (max-width: "1150px") {
+            margin: 0 0 0 0;
+        }
+    }
+    @media (max-width: "1150px") {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1rem);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
@@ -42,6 +92,13 @@ section {
     h1 {
         font-size: 6.5rem;
         margin: -40px 0 0 0;
+        text-align: end;
+        @media (max-width: "1210px") {
+            font-size: 5.5rem;
+        }
+        @media (max-width: "1150px") {
+            font-size: 6.5rem;
+        }
     }
     p {
         text-align: end;
@@ -54,22 +111,31 @@ section {
             color: white;
             margin: 2rem;
             border: 0;
-            padding: 0.75rem 1rem;
+            padding: 1rem 2rem;
             border-radius: 0.5rem;
             background: $Green;
             z-index: 1;
             font-size: 1.5rem;
             transition: all 125ms ease-in-out;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
             &:hover {
-                padding: 1.25rem 1.5rem;
+                padding: 1.5rem 2.5rem;
                 background: $Purple;
                 cursor: pointer;
             }
         }
+    }
+    @media (max-width: "1150px") {
+        margin: 0;
     }
 }
 
 .shadow {
     position: absolute;
     z-index: -1;
+    top: 20rem;
+    left: 0;
+    @media (max-width: "1150px") {
+        left: -7rem;
+    }
 }

@@ -16,7 +16,6 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 10rem 0 0 0;
     h1 {
         font-size: 6.5rem;
         text-align: center;
@@ -53,6 +52,33 @@ section {
             font-size: 1.5rem;
             color: $Green;
         }
+        .buttons {
+            display: flex;
+            gap: 5rem;
+            .purpleButton,
+            .greenButton {
+                padding: 1rem 2rem;
+                font-family: 'Poppins';
+                color: white;
+                border-radius: 1rem;
+                font-size: 1.5rem;
+            }
+            .purpleButton {
+                background: $Purple;
+                border: 0;
+                &:hover {
+                    background: $Green;
+                    cursor: pointer;
+                }
+            }
+            .greenButton {
+                background: transparent;
+                border: 2px solid $Green;
+                &:hover {
+                    background: $Green;
+                }
+            }
+        }
     }
 }
 
@@ -61,6 +87,9 @@ section {
     .text {
         margin: 0 6rem 0 0;
         text-align: end;
+        .buttons {
+            justify-content: end;
+        }
     }
 }
 
@@ -74,4 +103,5 @@ section {
     position: absolute;
     right: 0;
     bottom: -28rem;
+    z-index: -1;
 }

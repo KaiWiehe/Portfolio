@@ -10,14 +10,21 @@ section {
     z-index: 1;
     position: relative;
     color: white;
-    margin: 6rem 0 0 7rem;
+    margin: 0 0 0 7rem;
     display: flex;
     align-items: center;
-    padding: 4rem 0 0 0;
+    /* padding: 3rem 0 0 0; */
+    height: 100vh;
 }
 
 h1 {
     font-size: 6.5rem;
+    @media (max-width: "1300px") {
+        font-size: 5.5rem;
+    }
+    @media (max-width: "690px") {
+        font-size: 4.5rem;
+    }
 }
 
 .left {
@@ -26,14 +33,23 @@ h1 {
     }
     .text1 {
         width: 85%;
+        @media (max-width: "1000px") {
+            width: 100%;
+        }
     }
     .text2,
     .text3 {
         width: 73%;
+        @media (max-width: "1000px") {
+            width: 100%;
+        }
     }
     img {
         object-fit: contain;
         margin: 0 1rem 0 0;
+    }
+    @media (max-width: "1000px") {
+        margin: 0 7rem 0 0;
     }
 }
 
@@ -43,11 +59,20 @@ h1 {
         border-radius: 100%;
         border: 5px solid $Green;
         margin: 0 10rem 0 0;
+        @media (max-width: "1300px") {
+            width: 20rem;
+        }
+        @media (max-width: "1000px") {
+            display: none;
+        }
     }
     .strokeGreen {
         position: absolute;
         right: -6.5rem;
         top: 50%;
+        @media (max-width: "1000px") {
+            display: none;
+        }
     }
     .purpleShadow {
         position: absolute;

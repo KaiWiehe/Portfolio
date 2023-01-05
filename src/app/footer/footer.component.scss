@@ -34,13 +34,49 @@ footer {
                 color: $Purple;
             }
         }
+        .imprint {
+            position: relative;
+            &:hover {
+                /* border-bottom: 2px solid $LightBlue; */
+                cursor: pointer;
+                .underline {
+                    animation: borderBlue 125ms ease-in-out both;
+                }
+            }
+            .underline {
+                background: $LightBlue;
+                width: 0;
+                height: 2px;
+                position: absolute;
+                left: -2px;
+                bottom: 0;
+            }
+        }
     }
-    .middle {
-        font-size: 1.5rem;
+}
+
+.middle {
+    font-size: 1.5rem;
+}
+
+.right {
+    margin: 0 7rem 0 0;
+    gap: 2rem;
+    display: flex;
+    img {
+        transition: all 125ms ease-in-out;
+        &:hover {
+            scale: 1.2;
+            cursor: pointer;
+        }
     }
-    .right {
-        margin: 0 7rem 0 0;
-        gap: 1rem;
-        display: flex;
+}
+
+@keyframes borderBlue {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 2.5rem;
     }
 }
