@@ -1,11 +1,4 @@
-$Green: #70E61C;
-$LightBlue: #1CDAE6;
-$Purple: #9747FF;
-$DarkBlueTransparency: #141d2fcc;
-$DarkBlueBG: #141D2F;
-
-/* ------------------------------------------------------------- */
-
+@import '../../variables.scss';
 section {
     color: white;
     position: relative;
@@ -17,7 +10,7 @@ section {
     align-items: center;
     flex-direction: column;
     h1 {
-        font-size: 6.5rem;
+        /* font-size: 6.5rem; */
         text-align: center;
         position: relative;
         width: fit-content;
@@ -61,7 +54,7 @@ section {
             left: -9rem;
             top: 50%;
         }
-        @media (max-width: 550px) {
+        /* @media (max-width: 550px) {
             font-size: 5.5rem;
         }
         @media (max-width: 470px) {
@@ -69,11 +62,14 @@ section {
         }
         @media (max-width: 420px) {
             font-size: 3.5rem;
-        }
+        } */
     }
     p {
         margin: 1rem 2rem;
         text-align: center;
+        @media (max-width: 390px) {
+            margin: 1rem;
+        }
     }
 }
 
@@ -129,6 +125,9 @@ section {
                 color: white;
                 border-radius: 1rem;
                 font-size: 1.5rem;
+                @media (max-width: 390px) {
+                    font-size: 1rem;
+                }
             }
             .purpleButton {
                 background: $Purple;
@@ -169,6 +168,9 @@ section {
     @media (max-width: 650px) {
         margin: 0 2rem 0 2rem;
     }
+    @media (max-width: 390px) {
+        margin: 0 1rem 0 1rem;
+    }
 }
 
 .reverse {
@@ -199,6 +201,13 @@ section {
     position: absolute;
     top: 50rem;
     z-index: -1;
+    @media (max-width: 1600px) {
+        top: 37rem;
+    }
+    @media (max-width: 950px) {
+        top: 89rem;
+        width: 24rem;
+    }
 }
 
 .greenShadow {

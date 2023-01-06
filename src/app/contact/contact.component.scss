@@ -1,23 +1,4 @@
-$Green: #70E61C;
-$LightBlue: #1CDAE6;
-$Purple: #9747FF;
-$DarkBlueTransparency: #141d2fcc;
-$DarkBlueBG: #141D2F;
-
-/* ------------------------------------------------------------- */
-
-:root {
-    --d: 2500ms;
-    --angle: 90deg;
-    --gradX: 100%;
-    --gradY: 50%;
-    --c1: rgba(168, 239, 255, 1);
-    --c2: rgba(168, 239, 255, 0.1);
-}
-
-
-/* ------------------------------------------------------------- */
-
+@import '../../variables.scss';
 section {
     color: white;
     position: relative;
@@ -25,7 +6,7 @@ section {
 }
 
 h1 {
-    font-size: 6.5rem;
+    /* font-size: 6.5rem; */
     position: relative;
     margin: 6rem 0 0 7rem;
     .stroke {
@@ -41,18 +22,16 @@ h1 {
         bottom: -55rem;
         left: -7rem;
         z-index: -1;
+        @media (max-width: 850px) {
+            bottom: -66rem;
+            width: 30rem;
+        }
     }
     @media (max-width: 650px) {
         margin: 6rem 0 0 2rem;
     }
-    @media (max-width: 520px) {
-        font-size: 5.5rem;
-    }
-    @media (max-width: 450px) {
-        font-size: 4.5rem;
-    }
     @media (max-width: 390px) {
-        font-size: 3.5rem;
+        margin: 6rem 0 0 1rem;
     }
 }
 
@@ -84,6 +63,10 @@ h1 {
         @media (max-width: 650px) {
             margin: 0 2rem 0 2rem;
             width: calc( 100% - 4rem);
+        }
+        @media (max-width: 390px) {
+            margin: 0 1rem 0 1rem;
+            width: auto;
         }
     }
     .right {
@@ -155,6 +138,10 @@ h1 {
             margin: 0 2rem 0 2rem;
             width: calc( 100% - 4rem);
         }
+        @media (max-width: 390px) {
+            margin: 0 1rem 0 1rem;
+            width: auto;
+        }
     }
     @media (max-width: 850px) {
         flex-direction: column;
@@ -172,5 +159,8 @@ h1 {
     }
     @media (max-width: 650px) {
         right: 2rem;
+    }
+    @media (max-width: 390px) {
+        right: 1rem;
     }
 }

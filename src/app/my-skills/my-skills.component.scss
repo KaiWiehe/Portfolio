@@ -1,11 +1,4 @@
-$Green: #70E61C;
-$LightBlue: #1CDAE6;
-$Purple: #9747FF;
-$DarkBlueTransparency: #141d2fcc;
-$DarkBlueBG: #141D2F;
-
-/* ------------------------------------------------------------- */
-
+@import '../../variables.scss';
 section {
     color: white;
     display: flex;
@@ -15,7 +8,7 @@ section {
     justify-content: center;
     /* padding: 15rem 0 0 0; */
     /* height: 33rem; */
-    height: 100vh;
+    min-height: 100vh;
     @media (max-width: "1150px") {
         flex-direction: column-reverse;
         padding: 0 7rem 0 7rem;
@@ -23,6 +16,12 @@ section {
     @media (max-width: 650px) {
         padding: 2rem 2rem 0 2rem;
         gap: 0rem;
+    }
+    @media (max-width: 390px) {
+        padding: 5rem 1rem 0 1rem;
+    }
+    @media (max-height: 390px) {
+        padding: 5rem 7rem 0 7rem;
     }
 }
 
@@ -99,10 +98,10 @@ section {
     flex-direction: column;
     align-items: flex-end;
     h1 {
-        font-size: 6.5rem;
+        /* font-size: 6.5rem; */
         margin: -40px 0 0 0;
         text-align: end;
-        @media (max-width: "1210px") {
+        /* @media (max-width: "1210px") {
             font-size: 5.5rem;
         }
         @media (max-width: "1150px") {
@@ -113,7 +112,7 @@ section {
         }
         @media (max-width: "470px") {
             font-size: 4.5rem;
-        }
+        } */
     }
     p {
         text-align: end;

@@ -1,11 +1,4 @@
-$Green: #70E61C;
-$LightBlue: #1CDAE6;
-$Purple: #9747FF;
-$DarkBlueTransparency: #141d2fcc;
-$DarkBlueBG: #141D2F;
-
-/* ------------------------------------------------------------- */
-
+@import 'variables.scss';
 
 /* * {
     outline: 1px solid red;
@@ -33,3 +26,16 @@ html {
 /* section {
     scroll-snap-align: start;
 } */
+
+h1 {
+    font-size: 6.5rem;
+    @media (max-width: "1300px") {
+        font-size: 5.5rem;
+    }
+    @media (max-width: "690px") {
+        font-size: 4.5rem;
+    }
+    @media (max-width: "430px") {
+        font-size: 3.5rem;
+    }
+}

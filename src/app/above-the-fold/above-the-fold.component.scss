@@ -1,15 +1,8 @@
-$Green: #70E61C;
-$LightBlue: #1CDAE6;
-$Purple: #9747FF;
-$DarkBlueTransparency: #141d2fcc;
-$DarkBlueBG: #141D2F;
-
-/* ------------------------------------------------------------- */
-
+@import '../../variables.scss';
 section {
     display: flex;
     position: relative;
-    height: calc( 100vh - 64px);
+    min-height: calc( 100vh - 64px);
     margin: 64px 0 0 0;
 }
 
@@ -36,6 +29,9 @@ section {
         bottom: -3rem;
     }
     @media (max-height: "800px") and (max-width: "1350px") {
+        bottom: 0rem;
+    }
+    @media (max-width: "650px") {
         bottom: 0rem;
     }
 }
@@ -94,16 +90,22 @@ section {
     @media (max-height: "1000px") and (max-width: "1350px") {
         bottom: -9rem;
     }
+    @media (min-height: "1000px") and (max-width: "1050px") {
+        bottom: -9rem;
+    }
     @media (max-width: 530px) {
         bottom: -11rem;
     }
     @media (max-height: "800px") and (max-width: "1350px") {
         bottom: -11rem;
     }
+    @media (max-height: "800px") and (max-width: "900px") {
+        bottom: -12rem;
+    }
     @media (max-height: "720px") and (max-width: "1350px") {
         bottom: -14rem;
     }
-    @media (max-width: "650px") {
+    @media (max-width: "650px") and (max-height: 720px) {
         bottom: -16rem;
     }
 }
@@ -112,7 +114,8 @@ section {
     rotate: -90deg;
     font-size: 4.5rem;
     margin: 1rem -4rem 0 0;
-    @media (max-height: "1000px") and (max-width: "1350px") {
+    @media/*  (max-height: "1000px") and */
+    (max-width: "1350px") {
         font-size: 3rem;
         margin: 1rem -3rem 0 0;
     }
@@ -133,7 +136,8 @@ section {
 .name {
     font-size: 6.5rem;
     font-weight: 700;
-    @media (max-height: "1000px") and (max-width: "1350px") {
+    @media /* (max-height: "1000px") and */
+    (max-width: "1350px") {
         font-size: 4.5rem;
     }
     @media (max-width: 530px) {
@@ -152,7 +156,8 @@ section {
     color: $Purple;
     position: relative;
     margin: -1rem 0 0 0;
-    @media (max-height: "1000px") and (max-width: "1350px") {
+    @media /* (max-height: "1000px") and */
+    (max-width: "1350px") {
         font-size: 2.2rem;
     }
     @media (max-width: 530px) {
@@ -176,7 +181,7 @@ section {
         bottom: -13rem;
         top: unset;
     }
-    @media (max-height: "1000px") and (max-width: "1350px") {
+    @media (max-width: "530px") {
         bottom: -18rem;
     }
     @media (max-height: "800px") and (max-width: "1350px") {
@@ -185,9 +190,12 @@ section {
     @media (max-height: "720px") and (max-width: "1350px") {
         bottom: -24rem;
     }
-    @media (max-width: "650px") {
+    @media (max-width: "650px") and (max-height: 1000px) {
         bottom: -23rem;
         width: 68rem;
+    }
+    @media (max-width: "650px") and (min-height: 721px) {
+        bottom: -18rem;
     }
 }
 
@@ -265,5 +273,8 @@ section {
     @media (max-width: 650px) {
         bottom: 2rem;
         left: -4rem;
+    }
+    @media (max-width: 390px) {
+        left: -5rem;
     }
 }
