@@ -5,6 +5,16 @@ section {
     padding: 1rem 0 2rem 0;
 }
 
+.purpleShadow {
+    position: absolute;
+    bottom: -19rem;
+    z-index: -1;
+    @media (max-width: 850px) {
+        bottom: -19rem;
+        width: 30rem;
+    }
+}
+
 h1 {
     /* font-size: 6.5rem; */
     position: relative;
@@ -15,16 +25,6 @@ h1 {
         top: 50%;
         @media (max-width: 650px) {
             left: -4rem;
-        }
-    }
-    .purpleShadow {
-        position: absolute;
-        bottom: -55rem;
-        left: -7rem;
-        z-index: -1;
-        @media (max-width: 850px) {
-            bottom: -66rem;
-            width: 30rem;
         }
     }
     @media (max-width: 650px) {

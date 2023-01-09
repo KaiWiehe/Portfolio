@@ -75,5 +75,9 @@ export class ContactComponent {
 
   constructor(){
     //this.contactForm.valueChanges.subscribe(console.log);
+    /* console.log(window.innerWidth); */
+
   }
+
+
 }
