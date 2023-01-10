@@ -19,6 +19,7 @@ header {
     display: flex;
     align-items: center;
     z-index: 3;
+    transition: all 125ms ease-in-out;
     p {
         color: $Green;
     }
@@ -54,7 +55,7 @@ header {
             border-bottom: 2px solid $Purple;
         }
     }
-    @media (max-width: 700px) {
+    @media (max-width: 850px) {
         display: none;
     }
 }
@@ -99,7 +100,7 @@ header {
             transform-origin: 62% 52%;
         }
     }
-    @media (max-width: 700px) {
+    @media (max-width: 850px) {
         display: flex;
     }
     @media (max-width: 650px) {

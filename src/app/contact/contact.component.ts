@@ -1,7 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 
-
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -13,6 +12,7 @@ export class ContactComponent {
   @ViewChild('name') name!: ElementRef;
   @ViewChild('mail') mail!: ElementRef;
   @ViewChild('message') message!: ElementRef;
+  @ViewChild('button') button!: ElementRef;
 
   public mailSent: boolean = false;
 
@@ -38,29 +38,51 @@ export class ContactComponent {
   })
 
   async sendMail(){
-    //https://kai-wiehe.developerakademie.net/send_mail/send_mail.php
+    this.disableForm();
+    await this.sendMessage();
+    this.enableAndClearForm();
+    this.mailSent = true;
+  }
+
+  disableForm(){
     let name = this.name.nativeElement;
     let mail = this.mail.nativeElement;
     let message = this.message.nativeElement;
+    let button = this.button.nativeElement;
 
     name.disabled = true;
     mail.disabled = true;
     message.disabled = true;
+    button.disabled = true;
+  }
 
-    //animation
+  async sendMessage(){
+    await fetch('https://kai-wiehe.developerakademie.net/send_mail/send_mail.php',
+      {
+        method: 'POST',
+        body: this.createMessage()
+      }
+    )
+  }
 
-    let messageSummary = `Name: ${name.value}, Message: ${message.value}`;
+  createMessage(){
+    let name = this.name.nativeElement;
+    let mail = this.mail.nativeElement;
+    let message = this.message.nativeElement;
+
+    let messageSummary = `Name: ${name.value}, Message: ${message.value}, Mail: ${mail.value}`;
 
     let fd = new FormData();
     fd.append('name', name.value);
     fd.append('message', messageSummary);
 
-    await fetch('https://kai-wiehe.developerakademie.net/send_mail/send_mail.php',
-      {
-        method: 'POST',
-        body: fd
-      }
-    )
+    return fd;
+  }
+
+  enableAndClearForm(){
+    let name = this.name.nativeElement;
+    let mail = this.mail.nativeElement;
+    let message = this.message.nativeElement;
 
     name.value = '';
     mail.value = '';
@@ -69,14 +91,9 @@ export class ContactComponent {
     name.disabled = false;
     mail.disabled = false;
     message.disabled = false;
-
-    this.mailSent = true;
   }
 
   constructor(){
-    //this.contactForm.valueChanges.subscribe(console.log);
-    /* console.log(window.innerWidth); */
-
   }
 
 

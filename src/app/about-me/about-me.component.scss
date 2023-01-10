@@ -14,6 +14,7 @@ section {
     }
     @media (max-width: 390px) {
         margin: 0 0 0 1rem;
+        padding: 3rem 0 0 0;
     }
 }
 
@@ -57,7 +58,10 @@ section {
     .border {
         border-radius: 100%;
         border: 5px solid $Green;
-        margin: 0 10rem 0 0;
+        margin: 0 7rem 0 0;
+        width: 20rem;
+        height: 20rem;
+        object-fit: cover;
         @media (max-width: "1300px") {
             width: 20rem;
         }
@@ -67,7 +71,7 @@ section {
     }
     .strokeGreen {
         position: absolute;
-        right: -6.5rem;
+        right: -9.5rem;
         top: 50%;
         @media (max-width: "1000px") {
             display: none;

@@ -9,38 +9,40 @@ section {
 .img {
     @media (max-width: "1350px") {
         position: absolute;
-        bottom: 5rem;
+        bottom: 1rem;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     @media (max-height: "1200px") and (max-width: "1350px") {
-        bottom: 8rem;
+        bottom: -5rem;
     }
     @media (max-height: "1100px") and (max-width: "1350px") {
-        bottom: 11rem;
-    }
-    @media (max-height: "1000px") and (max-width: "1350px") {
-        bottom: 6rem;
-    }
-    @media (max-height: "950px") and (max-width: "1350px") {
-        bottom: 0;
-    }
-    @media (max-height: "850px") and (max-width: "1350px") {
         bottom: -3rem;
     }
+    @media (max-height: "1000px") and (max-width: "1350px") {
+        bottom: -5rem;
+    }
+    @media (max-height: "950px") and (max-width: "1350px") {
+        bottom: -11rem;
+    }
+    @media (max-height: "850px") and (max-width: "1350px") {
+        bottom: -14rem;
+    }
     @media (max-height: "800px") and (max-width: "1350px") {
-        bottom: 0rem;
+        bottom: -7rem;
     }
     @media (max-width: "650px") {
-        bottom: 0rem;
+        bottom: -7rem;
     }
 }
 
 .picture {
-    width: 40rem;
-    margin: 0 0 0 4rem;
+    width: 29rem;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    margin: 0 0 0 7rem;
     @media (max-width: "1350px") {
-        margin: 0 0 0 1rem;
+        margin: 0 0 0 5rem;
     }
     @media (max-height: "1200px") and (max-width: "1350px") {
         width: 35rem;
@@ -82,7 +84,7 @@ section {
         right: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        bottom: -4rem;
+        bottom: -9rem;
         width: max-content;
         top: unset;
         height: 21rem;
@@ -114,8 +116,7 @@ section {
     rotate: -90deg;
     font-size: 4.5rem;
     margin: 1rem -4rem 0 0;
-    @media/*  (max-height: "1000px") and */
-    (max-width: "1350px") {
+    @media (max-width: "1350px") {
         font-size: 3rem;
         margin: 1rem -3rem 0 0;
     }
@@ -178,7 +179,7 @@ section {
     width: 110vw;
     height: 65rem;
     @media (max-width: "1350px") {
-        bottom: -13rem;
+        bottom: -17rem;
         top: unset;
     }
     @media (max-width: "530px") {

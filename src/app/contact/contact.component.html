@@ -43,7 +43,7 @@
                             </ng-container>
                         </ng-container>
                     </ng-container>
-                    <button [disabled]="!(contactForm.valid && (contactForm.dirty || contactForm.touched))" type="submit" class="greenButton" translate>Send message</button>
+                    <button [disabled]="!(contactForm.valid && (contactForm.dirty || contactForm.touched))" type="submit" class="greenButton" #button translate>Send message</button>
                 </form>
             </div>
         </div>

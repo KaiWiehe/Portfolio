@@ -2,6 +2,9 @@
 section {
     color: white;
     position: relative;
+    @media (max-width: 390px) {
+        padding: 1rem 0 0 0;
+    }
 }
 
 .headline {
@@ -10,7 +13,6 @@ section {
     align-items: center;
     flex-direction: column;
     h1 {
-        /* font-size: 6.5rem; */
         text-align: center;
         position: relative;
         width: fit-content;
@@ -21,48 +23,11 @@ section {
         .long {
             right: -32rem;
             top: 50%;
-            /* right: -2rem;
-            top: 50%;
-            width: 35vw;
-            transform: translate(100%, 0); */
-            /* @media (max-width: 1750px) {
-                width: 33vw;
-            }
-            @media (max-width: 1550px) {
-                width: 30vw;
-            }
-            @media (max-width: 1300px) {
-                width: 27vw;
-            }
-            @media (max-width: 1150px) {
-                width: 25vw;
-            }
-            @media (max-width: 1050px) {
-                width: 22vw;
-            }
-            @media (max-width: 950px) {
-                width: 19vw;
-            }
-            @media (max-width: 850px) {
-                width: 15vw;
-            }
-            @media (max-width: 750px) {
-                width: 10vw;
-            } */
         }
         .short {
             left: -9rem;
             top: 50%;
         }
-        /* @media (max-width: 550px) {
-            font-size: 5.5rem;
-        }
-        @media (max-width: 470px) {
-            font-size: 4.5rem;
-        }
-        @media (max-width: 420px) {
-            font-size: 3.5rem;
-        } */
     }
     p {
         margin: 1rem 2rem;
@@ -121,7 +86,6 @@ section {
             .purpleButton,
             .greenButton {
                 padding: 1rem 2rem;
-                font-family: 'Poppins';
                 color: white;
                 border-radius: 1rem;
                 font-size: 1.5rem;
@@ -142,6 +106,7 @@ section {
                 border: 2px solid $Green;
                 &:hover {
                     background: $Green;
+                    cursor: pointer;
                 }
             }
             @media (max-width: 950px) {
@@ -215,4 +180,9 @@ section {
     right: 0;
     bottom: -28rem;
     z-index: -1;
+}
+
+.aos-animate {
+    z-index: 1;
+    position: relative;
 }

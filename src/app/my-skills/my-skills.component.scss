@@ -6,8 +6,6 @@ section {
     gap: 4rem;
     position: relative;
     justify-content: center;
-    /* padding: 15rem 0 0 0; */
-    /* height: 33rem; */
     min-height: 100vh;
     @media (max-width: "1150px") {
         flex-direction: column-reverse;
@@ -18,10 +16,16 @@ section {
         gap: 0rem;
     }
     @media (max-width: 390px) {
-        padding: 5rem 1rem 0 1rem;
+        padding: 0 1rem 0 1rem;
     }
-    @media (max-height: 390px) {
-        padding: 5rem 7rem 0 7rem;
+    @media (max-height: 600px) {
+        padding: 2rem 1rem 0 1rem;
+    }
+    @media (max-height: 540px) {
+        padding: 4rem 1rem 0 1rem;
+    }
+    @media (max-height: 480px) {
+        padding: 6rem 1rem 0 1rem;
     }
 }
 
@@ -41,9 +45,19 @@ section {
                 animation: jump 400ms cubic-bezier(0.42, 0, 0.7, 0.91) infinite;
             }
         }
+        img {
+            @media (max-width: 450px) {
+                width: 2rem;
+            }
+        }
         span {
-            /*   width: 110%; */
             text-align: center;
+            @media (max-width: 450px) {
+                font-size: 0.75rem;
+            }
+        }
+        @media (max-width: 450px) {
+            width: 11%;
         }
     }
     @media (max-width: "1150px") {
@@ -70,21 +84,8 @@ section {
     flex-direction: column;
     align-items: flex-end;
     h1 {
-        /* font-size: 6.5rem; */
         margin: -40px 0 0 0;
         text-align: end;
-        /* @media (max-width: "1210px") {
-            font-size: 5.5rem;
-        }
-        @media (max-width: "1150px") {
-            font-size: 6.5rem;
-        }
-        @media (max-width: "700px") {
-            font-size: 5.5rem;
-        }
-        @media (max-width: "470px") {
-            font-size: 4.5rem;
-        } */
     }
     p {
         text-align: end;

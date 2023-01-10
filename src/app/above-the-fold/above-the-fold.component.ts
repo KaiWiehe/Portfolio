@@ -12,12 +12,6 @@ export class AboveTheFoldComponent implements OnInit {
     this.contactSection.nativeElement.scrollIntoView();
   }
 
-
-  // scroll(id)
-  // scroll(el: HTMLElement) {
-  //   el.scrollIntoView();
-  // }
-
   ngOnInit(): void {
   }
 }

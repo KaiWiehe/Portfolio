@@ -1,8 +1,8 @@
 {
     "About me": "Über mich",
-    "I am a German-speaking Web Developer with experience in building web apps with JavaScript & Angular. You are welcome to visit my public portfolio, which includes responsive websites and business apps.": "Ich bin ein deutschsprachiger Webentwickler mit Erfahrung im erstellen von Web-Apps mit JavaScript & Angular. Gerne können Sie mein öffentliches Portfolio besuchen, das Webseiten und Business-Apps umfasst.",
+    "I am a German-speaking Web Developer with experience in building web apps with JavaScript & Angular. You are welcome to visit my public portfolio, which includes responsive websites and business apps.": "Ich bin ein deutschsprachiger Webentwickler mit Erfahrung im Erstellen von Web-Apps mit JavaScript & Angular. Gerne können Sie mein öffentliches Portfolio besuchen, das Webseiten und Business-Apps umfasst.",
     "I’ve always been fascinated by Software that simplifies my life. To take my skills to a professional level, I decided to train as a front-end developer at the Developer Akademie.": "Ich war schon immer fasziniert von Software, die mein Leben vereinfacht. Um meine Fähigkeiten auf ein professionelles Niveau zu bringen, habe ich mich für eine Ausbildung zum Frontend-Entwickler an der Developer Akademie entschieden.",
-    "There I was able to quickly deepen my knowledge in several individual or group projects and got feedback on them in regular code reviews. As a junior frontend developer, I am now looking forward to putting my knowledge to the test and would very much like to support you as part of your software team.": "Dort konnte ich mein Wissen in mehreren Einzel- oder Gruppenprojekten schnell vertiefen und bekam in regelmäßigen Code Reviews Feedback dazu. Als Junior Frontend-Entwickler freue ich mich nun darauf, mein Wissen unter Beweis zu stellen und möchte Sie als Teil Ihres Software-Teams sehr gerne unterstützen.",
+    "There, I quickly deepen my knowledge in several individual or group projects and got feedback on them in regular code reviews. As a junior front-end developer, I am looking forward to putting my knowledge to the test and would like to support you as part of your software team.": "Dort vertiefte ich mein Wissen schnell in mehreren Einzel- oder Gruppenprojekten und bekam in regelmäßigen Code-Reviews Feedback dazu. Als Junior Frontend-Entwickler freue ich mich darauf, mein Wissen unter Beweis zu stellen und möchte Sie als Teil Ihres Software-Teams unterstützen.",
     "Let's talk!": "Kontaktieren Sie mich",
     "Contact": "Kontakt",
     "Got a problem to solve?": "Haben Sie ein Problem das ich lösen kann?",
@@ -19,7 +19,12 @@
     "Imprint": "Impressum",
     "Skills": "Kompetenzen",
     "My skills": "Meine Kompetenzen",
-    "I have gained experience in building projects with various front end technologies and concepts.": "Ich habe Erfahrung in Bauprojekten mit verschiedenen Frontend-Technologien und -Konzepten gesammelt.",
+    "I have gained experience in building projects with various front-end technologies and concepts.": "Ich habe Erfahrung in Bauprojekten mit verschiedenen Frontend-Technologien und -Konzepten gesammelt.",
     "Get in touch": "Kontaktieren Sie mich",
-    "This page is a sample of my work - please feel free to try them out.": "Diese Seite ist ein Beispiel meiner Arbeit - probieren Sie sie einfach aus."
+    "This page is a sample of my work - please feel free to try them out.": "Diese Seite ist ein Beispiel meiner Arbeit - probieren Sie sie einfach aus.",
+    "A Kanban task management system to create and organize tasks using drag and drop. You can create multiple users, tasks, categories, subtasks, and more.": "Ein Kanban-Aufgabenverwaltungssystem zum Erstellen und Organisieren von Aufgaben per Drag-and-Drop. Sie können mehrere Benutzer, Aufgaben, Kategorien, Unteraufgaben, usw. erstellen.",
+    "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe get home but watch out for the big chicken.": "Ein einfaches Jump-and-Run-Spiel, das auf Objektorientierung basiert. Hilf Pepe nach Hause zu kommen, aber pass auf das große Huhn auf.",
+    "Angular based web app of the popular drinking game \"Ring of fire\". You have to draw a card and complete the task. Play with your friends on multiple devices.": "Angularbasierte Webapp des beliebten Trinkspiels \"Ring of fire\". Sie müssen eine Karte ziehen und die Aufgabe erfüllen. Spielen Sie mit Ihren Freunden auf mehreren Geräten.",
+    "A simple quiz web app with multiple categories. Show your knowledge in questions about \"The Big Bang Theory\" or about the largest island in Germany.": "Eine einfache Quiz-Webapp mit mehreren Kategorien. Zeigen Sie Ihr Wissen bei Fragen zu \"The Big Bang Theory\" oder zur größten Insel Deutschlands.",
+    "A small website about the best recipes that I collected during my time as a chef.": "Eine kleine Website über die besten Rezepte, die ich während meiner Zeit als Koch gesammelt habe."
 }
