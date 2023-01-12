@@ -14,13 +14,13 @@ export class AppComponent implements AfterViewInit, OnInit{
   ngOnInit(){
   }
 
-  @ViewChild(ContactComponent) contact!: ContactComponent;
-  contactSection: any;
+  /* @ViewChild(ContactComponent) contact!: ContactComponent;
+  contactSection: any; */
 
   ngAfterViewInit(){
-      setTimeout(() => {
+      /* setTimeout(() => {
         this.contactSection = this.contact.contactSectionID;
-      }, 0);
+      }, 0); */
       AOS.init({
         offset: 200,
       });

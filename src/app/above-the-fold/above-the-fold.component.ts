@@ -6,12 +6,6 @@ import { Component, ElementRef, ViewChild, OnInit, Input } from '@angular/core';
   styleUrls: ['./above-the-fold.component.scss']
 })
 export class AboveTheFoldComponent implements OnInit {
-  @Input() contactSection:any;
-
-  scollToContact(){
-    this.contactSection.nativeElement.scrollIntoView();
-  }
-
   ngOnInit(): void {
   }
 }
