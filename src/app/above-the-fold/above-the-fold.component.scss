@@ -38,9 +38,15 @@ section {
         display: none;
     }
     @media (max-width: 800px) and (max-height: 600px) {
-        bottom: 0;
+        bottom: 0 !important;
     }
     @media (max-width: 800px) and (max-height: 550px) {
+        bottom: -2rem !important;
+    }
+    @media (max-width: 800px) and (max-height: 525px) {
+        bottom: 5rem !important;
+    }
+    @media (max-width: 800px) and (max-height: 470px) {
         display: none;
     }
     @media (max-width: 390px) and (max-height: 700px) {
@@ -73,6 +79,9 @@ section {
     }
     @media (max-width: 1350px) and (max-height: 700px) {
         width: 15rem;
+    }
+    @media (max-width: 800px) and (max-height: 525px) {
+        width: 10rem;
     }
 }
 
@@ -120,6 +129,10 @@ section {
     @media (max-width: 500px) and (max-height: 700px) {
         left: -1rem;
     }
+    @media (max-width: 800px) and (max-height: 525px) {
+        left: -3rem;
+        top: 2rem;
+    }
 }
 
 .iAmContainer {
@@ -145,6 +158,9 @@ section {
     }
     @media (max-width: 800px) and (max-height: 600px) {
         bottom: -14rem;
+    }
+    @media (max-width: 800px) and (max-height: 550px) {
+        bottom: -16rem;
     }
 }
 
@@ -235,6 +251,9 @@ section {
     @media (max-width: 800px) and (max-height: 600px) {
         bottom: -21rem;
     }
+    @media (max-width: 800px) and (max-height: 550px) {
+        bottom: -23rem;
+    }
 }
 
 .iAmText {
@@ -256,6 +275,9 @@ section {
         padding: 1.5rem 2.5rem;
         background: $Purple;
         cursor: pointer;
+    }
+    @media (max-width: 800px) and (max-height: 550px) {
+        margin: 1rem 2rem 2rem 2rem;
     }
 }
 
