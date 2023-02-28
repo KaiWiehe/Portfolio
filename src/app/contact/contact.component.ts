@@ -92,9 +92,4 @@ export class ContactComponent {
     mail.disabled = false;
     message.disabled = false;
   }
-
-  constructor(){
-  }
-
-
 }

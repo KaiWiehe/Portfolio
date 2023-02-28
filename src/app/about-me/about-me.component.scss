@@ -3,17 +3,16 @@ section {
     z-index: 1;
     position: relative;
     color: white;
-    margin: 0 0 0 7rem;
     display: flex;
     align-items: center;
     /* padding: 3rem 0 0 0; */
     min-height: 100vh;
-    @media (max-width: 650px) {
-        margin: 0 0 0 2rem;
+    @media (max-height: 450px) and (max-width: 850px) {
+        margin: 0 2rem 0 2rem;
         padding: 1rem 0 0 0;
     }
     @media (max-width: 390px) {
-        margin: 0 0 0 1rem;
+        margin: 0 1rem 0 1rem;
         padding: 3rem 0 0 0;
     }
     @media (max-height: 890px) {
@@ -25,22 +24,26 @@ section {
 }
 
 .left {
+    width: 100%;
     h1 {
         margin: 0;
+        @media (max-width: 1050px) and (min-width: 1000px) {
+            font-size: 5rem;
+        }
     }
     div {
         display: flex;
     }
     .text1 {
-        width: 85%;
-        @media (max-width: "1000px") {
+        max-width: 55rem;
+        @media (max-width: 1000px) {
             width: 100%;
         }
     }
     .text2,
     .text3 {
-        width: 73%;
-        @media (max-width: "1000px") {
+        max-width: 55rem;
+        @media (max-width: 1000px) {
             width: 100%;
         }
     }
@@ -49,13 +52,13 @@ section {
         margin: 0 1rem 0 0;
     }
     @media (max-width: 1000px) {
-        margin: 0 7rem 0 0;
+        margin: 0 7rem 0 7rem;
     }
-    @media (max-width: 650px) {
-        margin: 0 2rem 0 0;
+    @media (min-width: 1000px) {
+        margin: 0 1rem 0 7rem;
     }
-    @media (max-width: 390px) {
-        margin: 0 1rem 0 0;
+    @media (max-height: 450px) and (max-width: 850px) {
+        margin: 0;
     }
 }
 
@@ -89,5 +92,8 @@ section {
         z-index: -1;
         top: -14rem;
         width: 15rem;
+        @media (max-height: 450px) and (max-width: 850px) {
+            right: -2rem;
+        }
     }
 }
