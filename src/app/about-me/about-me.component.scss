@@ -60,6 +60,9 @@ section {
     @media (max-height: 450px) and (max-width: 850px) {
         margin: 0;
     }
+    @media (max-width: 650px) {
+        margin: 0 2rem 0 2rem;
+    }
 }
 
 .right {
@@ -68,13 +71,10 @@ section {
         border-radius: 100%;
         border: 5px solid $Green;
         margin: 0 7rem 0 0;
-        width: 20rem;
-        height: 20rem;
+        width: 25vw;
+        height: 25vw;
         object-fit: cover;
-        @media (max-width: "1300px") {
-            width: 20rem;
-        }
-        @media (max-width: "1000px") {
+        @media (max-width: 1000px) {
             display: none;
         }
     }
@@ -82,7 +82,7 @@ section {
         position: absolute;
         right: -9.5rem;
         top: 50%;
-        @media (max-width: "1000px") {
+        @media (max-width: 1000px) {
             display: none;
         }
     }
