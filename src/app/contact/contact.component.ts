@@ -1,10 +1,12 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import { ScrollToTopService } from '../services/scroll-to-top.service';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
+  providers: [ScrollToTopService]
 })
 export class ContactComponent {
   @ViewChild('contact') contactSectionID!: ElementRef;
@@ -15,11 +17,6 @@ export class ContactComponent {
   @ViewChild('button') button!: ElementRef;
 
   public mailSent: boolean = false;
-
-  scrollToTop() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
 
   public contactForm: FormGroup =  new FormGroup({
     name: new FormControl('', [
@@ -36,6 +33,9 @@ export class ContactComponent {
       Validators.minLength(3),
     ], []),
   })
+
+  constructor(public ScrollToTopService: ScrollToTopService){}
+
 
   async sendMail(){
     this.disableForm();
