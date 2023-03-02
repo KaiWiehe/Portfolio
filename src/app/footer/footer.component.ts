@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ScrollToTopService } from '../services/scroll-to-top.service';
+import { ScrollToTopService } from '../../services/scroll-to-top.service';
 
 @Component({
   selector: 'app-footer',

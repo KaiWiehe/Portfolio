@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import { ScrollToTopService } from '../services/scroll-to-top.service';
+import { ScrollToTopService } from '../../services/scroll-to-top.service';
 
 @Component({
   selector: 'app-contact',
