@@ -113,10 +113,12 @@ section {
             transition: all 125ms ease-in-out;
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
             height: fit-content;
-            &:hover {
-                padding: 1.5rem 2.5rem;
-                background: $Purple;
-                cursor: pointer;
+            @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    padding: 1.5rem 2.5rem;
+                    background: $Purple;
+                    cursor: pointer;
+                }
             }
         }
     }
