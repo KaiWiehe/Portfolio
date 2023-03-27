@@ -1,0 +1,193 @@
+@import '../../../variables.scss';
+section {
+    color: white;
+    position: relative;
+    padding: 1rem 0 2rem 0;
+}
+
+.purpleShadow {
+    position: absolute;
+    bottom: -19rem;
+    z-index: -1;
+    @media (max-width: 850px) {
+        bottom: -24rem;
+        width: 30rem;
+    }
+}
+
+h1 {
+    position: relative;
+    margin: 6rem 0 0 7rem;
+    .stroke {
+        position: absolute;
+        left: -7rem;
+        top: 50%;
+        @media (max-width: 650px) {
+            left: -4rem;
+        }
+    }
+    @media (max-height: 450px) and (max-width: 850px) {
+        margin: 6rem 0 0 2rem;
+    }
+    @media (max-width: 390px) {
+        margin: 6rem 0 0 1rem;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative;
+    .left {
+        margin: 0 0 0 7rem;
+        width: 40%;
+        h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            @media (max-width: 520px) {
+                font-size: 1.75rem;
+            }
+            @media (max-width: 450px) {
+                font-size: 1.5rem;
+            }
+            @media (max-width: 390px) {
+                font-size: 1.25rem;
+            }
+        }
+        @media (max-width: 850px) {
+            margin: 0 7rem 0 7rem;
+            width: calc( 100% - 14rem);
+        }
+        @media (max-height: 450px) and (max-width: 850px) {
+            margin: 0 2rem 0 2rem;
+            width: calc( 100% - 4rem);
+        }
+        @media (max-width: 390px) {
+            margin: 0 1rem 0 1rem;
+            width: auto;
+        }
+    }
+    .right {
+        margin: 0.75rem 7rem 0 7rem;
+        width: 40%;
+        form {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            height: 34rem;
+            .green {
+                color: $Green;
+                margin: 0;
+            }
+            input,
+            textarea {
+                font-family: 'Poppins', Arial, Helvetica, sans-serif;
+                padding: 1rem 1.25rem;
+                border: 1px solid $Purple;
+                border-radius: 0.5rem;
+                background: transparent;
+                color: white;
+                font-size: 1rem;
+                &:hover {
+                    border: 1px solid $Green;
+                }
+                &::placeholder {
+                    /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: white;
+                    opacity: 1;
+                    /* Firefox */
+                }
+                &:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: white;
+                }
+                &::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: white;
+                }
+                &:focus-visible {
+                    outline: unset;
+                    border: 1px solid $Green;
+                }
+                &.ng-touched,
+                &.ng-dirty {
+                    &.ng-invalid {
+                        border: 1px solid red;
+                    }
+                    &.ng-valid {
+                        border: 1px solid $Green;
+                    }
+                }
+                &:disabled {
+                    opacity: 0.2;
+                }
+            }
+            textarea {
+                height: 10rem;
+                resize: none;
+            }
+            .error {
+                color: red;
+                margin: -1rem 1rem;
+            }
+            .greenButton {
+                color: white;
+                margin: 0 auto 0 auto;
+                border: 0;
+                padding: 1rem 2rem;
+                border-radius: 0.5rem;
+                background: $Green;
+                z-index: 1;
+                font-size: 1.5rem;
+                transition: all 125ms ease-in-out;
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                &:enabled {
+                    @media (hover: hover) and (pointer: fine) {
+                        &:hover {
+                            padding: 1.5rem 2.5rem;
+                            background: $Purple;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                &:disabled {
+                    opacity: 0.2;
+                }
+            }
+        }
+        @media (max-width: 850px) {
+            margin: 0 7rem 0 7rem;
+            width: calc( 100% - 14rem);
+        }
+        @media (max-height: 450px) and (max-width: 850px) {
+            margin: 0 2rem 0 2rem;
+            width: calc( 100% - 4rem);
+        }
+        @media (max-width: 390px) {
+            margin: 0 1rem 0 1rem;
+            width: auto;
+        }
+    }
+    @media (max-width: 850px) {
+        flex-direction: column;
+    }
+}
+
+.goUpButton {
+    position: absolute;
+    right: 7rem;
+    bottom: -4rem;
+    transition: all 125ms ease-in-out;
+    &:hover {
+        scale: 1.1;
+        cursor: pointer;
+    }
+    @media (max-width: 650px) {
+        right: 2rem;
+    }
+    @media (max-width: 390px) {
+        right: 1rem;
+    }
+}

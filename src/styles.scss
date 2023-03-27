@@ -11,25 +11,14 @@ body {
     background: $DarkBlueBG;
     overflow-x: hidden;
     &::-webkit-scrollbar {
-        width: 0 !important/* Damit die scrollbar verschwindet */
+        width: 0 !important
     }
 }
 
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    /* scroll-snap-type: y mandatory; */
 }
-
-
-/* section {
-    overflow: hidden;
-} */
-
-
-/* section {
-    scroll-snap-align: start;
-} */
 
 h1 {
     font-size: 6.5rem;

@@ -1,5 +1,4 @@
-import { AfterViewInit, Component, ViewChild, OnInit } from '@angular/core';
-import { ContactComponent } from './contact/contact.component';
+import { AfterViewInit, Component } from '@angular/core';
 import * as AOS from 'aos';
 import {TranslateService} from '@ngx-translate/core';
 
@@ -8,19 +7,8 @@ import {TranslateService} from '@ngx-translate/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements AfterViewInit, OnInit{
-  title = 'kaiWiehePortfolio';
-
-  ngOnInit(){
-  }
-
-  /* @ViewChild(ContactComponent) contact!: ContactComponent;
-  contactSection: any; */
-
+export class AppComponent implements AfterViewInit{
   ngAfterViewInit(){
-      /* setTimeout(() => {
-        this.contactSection = this.contact.contactSectionID;
-      }, 0); */
       AOS.init({
         offset: 200,
       });
@@ -31,5 +19,4 @@ export class AppComponent implements AfterViewInit, OnInit{
 
   constructor(public translate: TranslateService) {
 }
-
 }
