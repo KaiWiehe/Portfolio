@@ -412,7 +412,6 @@ section {
     }
     @media (hover: hover) and (pointer: fine) {
       &:hover {
-        padding: 1.5rem 2.5rem;
         background: $Purple;
         cursor: pointer;
       }

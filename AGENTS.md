@@ -44,5 +44,5 @@ http://192.168.2.86/
 ## Wichtige Hinweise
 
 - Änderungen am Projekt dürfen nach Rücksprache mit Kai committed und gepusht werden.
-- Nach Code-Änderungen möglichst bauen und bei Bedarf deployen.
+- Nach Code-Änderungen immer committen, pushen, bauen und live deployen, damit Kai im Browser nur neu laden muss.
 - Bei reinen Textänderungen reicht normalerweise Commit und Push, sofern Kai zugestimmt hat.
