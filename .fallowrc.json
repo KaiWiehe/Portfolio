@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/fallow-rs/fallow/main/schema.json",
+  "ignoreDependencies": [
+    "@angular/animations",
+    "@angular/cdk",
+    "@angular/material",
+    "jasmine-core",
+    "karma-chrome-launcher",
+    "karma-coverage",
+    "karma-jasmine",
+    "karma-jasmine-html-reporter"
+  ]
+}
