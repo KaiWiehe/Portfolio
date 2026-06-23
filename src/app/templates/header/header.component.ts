@@ -23,26 +23,26 @@ export class HeaderComponent {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 
-  translateEN(){
-    this.translate.use('en');
-    let name = document.getElementById('name');
-    let mail = document.getElementById('mail');
-    let message = document.getElementById('message');
+  setLanguage(language: 'de' | 'en', closeMenu = false) {
+    this.translate.use(language);
 
-    (name as HTMLInputElement).placeholder = 'Your name';
-    (mail as HTMLInputElement).placeholder = 'Your email';
-    (message as HTMLInputElement).placeholder = 'Your message';
-  }
+    const name = document.getElementById('name') as HTMLInputElement | null;
+    const mail = document.getElementById('mail') as HTMLInputElement | null;
+    const message = document.getElementById('message') as HTMLInputElement | null;
 
-  translateDE(){
-    this.translate.use('de');
-    let name = document.getElementById('name');
-    let mail = document.getElementById('mail');
-    let message = document.getElementById('message');
+    if (language === 'en') {
+      if (name) name.placeholder = 'Your name';
+      if (mail) mail.placeholder = 'Your email';
+      if (message) message.placeholder = 'Your message';
+    } else {
+      if (name) name.placeholder = 'Ihr Name';
+      if (mail) mail.placeholder = 'Ihre E-Mail-Adresse';
+      if (message) message.placeholder = 'Ihre Nachricht';
+    }
 
-    (name as HTMLInputElement).placeholder = 'Ihr Name';
-    (mail as HTMLInputElement).placeholder = 'Ihre E-Mail adresse';
-    (message as HTMLInputElement).placeholder = 'Ihre Nachricht';
+    if (closeMenu) {
+      this.openAndCloseMenu();
+    }
   }
 
 }

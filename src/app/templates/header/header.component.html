@@ -4,8 +4,8 @@
         <a href="#aboutMe" class="noselect" translate>About me</a>
         <a href="#mySkills" class="noselect" translate>Skills</a>
         <a href="#portfolio" class="noselect">Portfolio</a>
-        <a (click)="translateEN();" class="noselect">EN</a>
-        <a (click)="translateDE();" class="noselect">DE</a>
+        <button type="button" (click)="setLanguage('en')" class="languageButton noselect" aria-label="Switch language to English" title="English">🇬🇧</button>
+        <button type="button" (click)="setLanguage('de')" class="languageButton noselect" aria-label="Sprache auf Deutsch umstellen" title="Deutsch">🇩🇪</button>
     </div>
 
     <div class="mobileMenuButton" (click)="openAndCloseMenu()" #mobileMenuButton>
@@ -24,7 +24,9 @@
         <a href="#aboutMe" (click)="openAndCloseMenu()" class="noselect" translate>About me</a>
         <a href="#mySkills" (click)="openAndCloseMenu()" class="noselect" translate>Skills</a>
         <a href="#portfolio" (click)="openAndCloseMenu()" class="noselect">Portfolio</a>
-        <a (click)="translateEN();" class="noselect" (click)="openAndCloseMenu()">EN</a>
-        <a (click)="translateDE();" class="noselect" (click)="openAndCloseMenu()">DE</a>
+        <div class="mobileLanguages">
+            <button type="button" (click)="setLanguage('en', true)" class="languageButton noselect" aria-label="Switch language to English" title="English">🇬🇧</button>
+            <button type="button" (click)="setLanguage('de', true)" class="languageButton noselect" aria-label="Sprache auf Deutsch umstellen" title="Deutsch">🇩🇪</button>
+        </div>
     </div>
 </header>
