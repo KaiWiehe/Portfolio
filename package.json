@@ -8,7 +8,9 @@
         "watch": "ng build --watch --configuration development",
         "test": "ng test",
         "i18n:init": "ngx-translate-extract --input ./src --output ./src/assets/i18n/de.json ./src/assets/i18n/en.json --key-as-default-value --replace --format json",
-        "i18n:extract": "ngx-translate-extract --input ./src --output ./src/assets/i18n/de.json ./src/assets/i18n/en.json --clean --format json"
+        "i18n:extract": "ngx-translate-extract --input ./src --output ./src/assets/i18n/de.json ./src/assets/i18n/en.json --clean --format json",
+        "fallow:audit": "npx fallow audit --format json --quiet",
+        "quality": "npm run build && npm run fallow:audit"
     },
     "private": true,
     "dependencies": {

@@ -45,4 +45,5 @@ http://192.168.2.86/
 
 - Änderungen am Projekt dürfen nach Rücksprache mit Kai committed und gepusht werden.
 - Nach Code-Änderungen immer committen, pushen, bauen und live deployen, damit Kai im Browser nur neu laden muss.
+- Bei JS/TS-Änderungen nach dem normalen Build zusätzlich Fallow laufen lassen: `npx fallow audit --format json --quiet`; relevante Findings direkt beheben.
 - Bei reinen Textänderungen reicht normalerweise Commit und Push, sofern Kai zugestimmt hat.
