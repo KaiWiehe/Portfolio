@@ -8,5 +8,7 @@ import { ScrollToTopService } from '../../../services/scroll-to-top.service';
   providers: [ScrollToTopService]
 })
 export class FooterComponent {
+  public readonly currentYear: number = new Date().getFullYear();
+
   constructor(public ScrollToTopService: ScrollToTopService){}
 }

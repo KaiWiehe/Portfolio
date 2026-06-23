@@ -1,23 +1,44 @@
 section {
     margin: 10rem 2rem 2rem 2rem;
     color: white;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
     a {
         color: rgba(0, 174, 255, 1);
+        word-break: break-word;
     }
     .close {
         position: absolute;
         right: 4rem;
         width: 5rem;
         top: 4rem;
+        z-index: 5;
+        cursor: pointer;
         &:hover {
-            cursor: pointer;
             scale: 1.1;
+        }
+        @media (max-width: 850px) {
+            right: 1.5rem;
+            top: 1.5rem;
+            width: 3rem;
+        }
+        @media (max-width: 500px) {
+            right: 1rem;
+            top: 1rem;
+            width: 2.5rem;
         }
     }
     .headers {
         font-size: 7vw;
+        @media (max-width: 500px) {
+            font-size: 2.25rem;
+        }
     }
     .breakWord {
         word-wrap: break-word;
+    }
+
+    @media (max-width: 500px) {
+        margin: 7rem 1rem 2rem 1rem;
     }
 }
